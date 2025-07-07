@@ -1,4 +1,3 @@
-
 if [ -f /sys/block/mmcblk0/device/life_time ]; then
     storage_type="eMMC"
     sp=
@@ -97,7 +96,7 @@ else color="\033[41m"
 fi
 
 echo "${color}                             "  
-echo "  设备$storage_type寿命已使用$life_percent_min%~$life_percent_max%  $sp$sp"
+echo "  设备$storage_type寿命已使用$life_percent_min%~$life_percent_max%   $sp"
 echo "                             \033[0m"
 
 #必样的累了，回头再补下面这一坨
@@ -119,7 +118,7 @@ echo "————————————————————————�
 echo  
 echo 其它信息：
 echo "-------------------------------------"
-if [ "$vendor" = "15" ]; then
+if [ "$vendor" = "15" -o "$vendor" = "SAMSUNG" ]; then
     vendor="三星"
 elif [ "$vendor" = "11" ]; then
     vendor="东芝"
