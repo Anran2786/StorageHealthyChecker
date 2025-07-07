@@ -11,6 +11,7 @@ Goal:
 - [x] 读取并识别闪存厂家
 - [ ] 闪存测速包括顺序读写和io性能
 - [x] 添加UFS支持（？
+- [ ] 添加在线数据库查询额外资料（？
 - [ ] More...（？
 
 ![eMMC当前实现](sample/eMMC.png)![UFS当前实现](sample/UFS.png)
